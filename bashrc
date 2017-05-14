@@ -114,12 +114,12 @@ if ! shopt -oq posix; then
 fi
 
 # Used for PyEnv
-export PYENV_ROOT="${HOME}/.pyenv"
+#export PYENV_ROOT="${HOME}/.pyenv"
 
-if [ -d "${PYENV_ROOT}" ]; then
-  export PATH="${PYENV_ROOT}/bin:${PATH}"
-  eval "$(pyenv init -)"
-fi
+#if [ -d "${PYENV_ROOT}" ]; then
+#  export PATH="${PYENV_ROOT}/bin:${PATH}"
+#  eval "$(pyenv init -)"
+#fi
 
 # Used for NVM
 source ~/.nvm/nvm.sh
