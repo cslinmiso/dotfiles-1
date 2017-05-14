@@ -3,7 +3,7 @@
 # Install brew package
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew_installs="sqlite zsh zsh-completions vim git python3 wget nvm"
+brew_installs="sqlite zsh zsh-completions vim git wget nvm"
 for brew_install in $brew_installs; do
   echo "Brew install $brew_install"
   brew install $brew_install
@@ -21,6 +21,9 @@ brew cask install iterm2
 # Link config files
 DOTDIR=~/.dotfiles
 files="vimrc vim zshrc oh-my-zsh" # list of files/folders to symlink in homedir
+
+# Move shell default to ZSH
+chsh -s /usr/local/bin/zsh
 
 # Create Symlink to each file
 for file in $files; do
