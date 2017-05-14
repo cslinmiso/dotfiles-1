@@ -25,6 +25,9 @@ files="vimrc vim zshrc oh-my-zsh" # list of files/folders to symlink in homedir
 # Move shell default to ZSH
 chsh -s /usr/local/bin/zsh
 
+# rebuild `.zcompdump` of zsh
+rm -f ~/.zcompdump; compinit
+
 # Create Symlink to each file
 for file in $files; do
   echo "Creating symlink to $file in home directory"
