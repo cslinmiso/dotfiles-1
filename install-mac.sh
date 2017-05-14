@@ -3,7 +3,7 @@
 # Install brew package
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew_installs="gdbm hub openssl sqlite zsh gettext libevent pcre tmux zsh-completions ghc libffi postgresql vim git lua python3 wget glib nvm readline xz"
+brew_installs="sqlite zsh zsh-completions vim git python3 wget nvm"
 for brew_install in $brew_installs; do
   echo "Brew install $brew_install"
   brew install $brew_install
@@ -28,4 +28,4 @@ for file in $files; do
   ln -sfv $DOTDIR/$file ~/.$file
 done
 
-echo "Remember to install Docker, MySQL, GitX, Sequal Pro, Chrome, Chrome Canary, FireFox, Atom, Sublime Text"
+echo "Remember to install Docker, MySQL, GitX, Chrome, Chrome Canary, FireFox, VSCode, Sublime Text"
