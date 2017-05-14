@@ -53,11 +53,11 @@ ZSH_THEME="lambda-mod"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker)
+plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/Documents/cybai/gocode/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -95,11 +95,11 @@ alias curl=/usr/local/opt/curl/bin/curl
 
 # alias git=hub
 
-alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
+#alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 
 # v8
-alias d8="$HOME/Documents/cybai/v8/out.gn/x64.release/d8"
-alias tick-processor="$HOME/Documents/cybai/v8/tools/mac-tick-processor"
+#alias d8="$HOME/Documents/cybai/v8/out.gn/x64.release/d8"
+#alias tick-processor="$HOME/Documents/cybai/v8/tools/mac-tick-processor"
 
 # Activate NVM
 export NVM_DIR="$HOME/.nvm"
@@ -109,11 +109,11 @@ source "$(brew --prefix nvm)/nvm.sh"
 export EDITOR="vim"
 
 # Add `depot_tools` to PATH
-export DEPOT_TOOLS_PATH="$HOME/depot_tools"
-export PATH="$PATH:$DEPOT_TOOLS_PATH"
+#export DEPOT_TOOLS_PATH="$HOME/depot_tools"
+#export PATH="$PATH:$DEPOT_TOOLS_PATH"
 
 # cargo bin
-export PATH="$PATH:$HOME/.cargo/bin"
+#export PATH="$PATH:$HOME/.cargo/bin"
 
 # Setup yarn
 export PATH="$PATH:$HOME/.yarn/bin"
@@ -155,10 +155,10 @@ checkRUIVersion () {
 # export DOCKER_MYSQL_HOST=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' ruiservicev2_mysql_1)
 
 # Activate rbenv
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 # Activate goenv
-if which goenv > /dev/null; then eval "$(goenv init -)"; fi
-export GOPATH="$HOME/Documents/cybai/gocode"
+#if which goenv > /dev/null; then eval "$(goenv init -)"; fi
+#export GOPATH="$HOME/Documents/treylin/gocode"
 
-export PATH="$PATH:$GOPATH/src/github.com/huydx/hget/bin"
+#export PATH="$PATH:$GOPATH/src/github.com/huydx/hget/bin"
