@@ -8,3 +8,9 @@
 # Load NVM
 export NVM_DIR="/Users/treylin/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# shortcuts
+alias la="ls -al"
+alias finder='open -a Finder ./'
+
+alias repo="cd ~/Documents/Repositories"
