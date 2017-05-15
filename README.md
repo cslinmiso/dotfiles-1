@@ -1,8 +1,8 @@
-# CYB dotfiles
+# cslinmiso dotfiles
 
 ## Installation
 
 ``` sh
-sh <(curl -sSL https://github.com/CYBAI/dotfiles/raw/master/scripts/install.sh)
+sh <(curl -sSL https://github.com/cslinmiso/dotfiles-mac/raw/master/scripts/install.sh)
 ```
 
