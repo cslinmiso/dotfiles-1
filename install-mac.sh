@@ -18,6 +18,9 @@ wget "https://raw.githubusercontent.com/halfo/lambda-mod-zsh-theme/master/lambda
 # Install iTerm2
 brew cask install iterm2
 
+# install RIME
+brew cask install squirrel
+
 # Link config files
 DOTDIR=~/.dotfiles
 files="vimrc vim zshrc oh-my-zsh" # list of files/folders to symlink in homedir
